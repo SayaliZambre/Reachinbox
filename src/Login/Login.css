@@ -1,0 +1,153 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0; /* Light text color for better contrast */
+    background-color: #000; /* Black background for the whole page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    width: 375px;
+    height: auto; /* Allow height to adjust based on content */
+    padding: 40px;
+    border: 1px solid #333; /* Darker border */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1px 1px 13px 1px #222; /* Darker shadow */
+    background-color: #111; /* Dark background for the form container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    position: relative;
+    color: white;
+    width: 23rem; /* Full width for the form group */
+    margin-bottom: 20px; /* Space between form elements */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 40px 12px 12px; /* Adjust padding for the icon */
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid #444; /* Darker input border */
+    background-color: #222; /* Dark background for input fields */
+    color: #e0e0e0; /* Light text color inside input fields */
+    font-size: 16px;
+}
+
+.form-group label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Lighter placeholder text color */
+    font-size: 16px;
+    background-color: #111; /* Match the input background */
+    display: flex;
+    align-items: center;
+    pointer-events: none; /* Prevent label from being interacted with */
+    transition: opacity 0.3s ease; /* Smooth transition for label */
+}
+
+.form-group label i {
+    margin-right: 8px;
+    font-size: 18px;
+    color: #ea4335; /* Google red color for the icon */
+}
+
+#email:focus + label,
+#email:not(:placeholder-shown) + label {
+    opacity: 0; /* Hide label when input is focused or has text */
+}
+
+#email:focus + label,
+#password:focus + label {
+    transform: translate3d(0, -100%, 0);
+    z-index: 1;
+    color: #1a73e8; /* Color when focused */
+}
+
+.password-fixed {
+    transform: translate3d(0, -100%, 0);
+    z-index: 1 !important;
+    color: #1a73e8; /* Keep link color as is */
+}
+
+.link {
+    padding-left: 4rem;
+}
+.form-link {
+    padding: 4px 0px;
+    /* padding-left: 10px; */
+}
+
+.form-link a {
+    color: #1a73e8; /* Keep link color as is */
+    font-weight: 500;
+}
+
+.form-link label {
+    color: #aaa; /* Light text color */
+    font-size: 14px;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.form-header h2 {
+    margin: 0;
+    font-weight: 600;
+    color: #e0e0e0; /* Light text color */
+}
+
+.form-header h4 {
+    margin: 10px 0px 15px;
+    font-weight: 600;
+    color: #e0e0e0; /* Light text color */
+}
+
+#logo {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.btn {
+    /* padding-right: 25px; */
+    /* float: center; */
+    margin-left: 7rem;
+    color: white;
+    padding-top: 10rem;
+    background: #1a73e8; /* Button color remains the same */
+    border: 0;
+    padding: 15px 28px;
+    border-radius: 4px;
+}
+
+#eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #e0e0e0; /* Light color for the eye icon */
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
